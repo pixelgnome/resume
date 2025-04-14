@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+
+    <style>
+
+        html {
+
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background: #ffe;
+            color: #f00;
+            font: 18px "helvetica neue", Helvetica, sans-serif;
+
+        }
+
+        header {
+
+        }
+
+        .grid-container {
+            display: grid;
+            gap: 2px;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            background: #000;
+            padding: 2px 0;
+
+        }
+
+        .grid-container > * {
+            background: #eee;
+            padding: 1em;
+        }
+
+
+        .one {
+            grid-column: span 2;
+        }
+
+        .five {
+            grid-row: span 2;
+        }
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+<header>
+   <h1>WENDINGEN</h1>
+</header>
+<div class="grid-container">
+    <div class="one">1</div>
+    <div class="item two">2</div>
+    <div class="item three">3</div>
+    <div class="item four">4</div>
+    <div class="item five">
+        <p>Nam rutrum, lectus sit amet luctus sodales, erat ex finibus sapien, consectetur luctus nulla neque nec ligula. Cras bibendum tortor odio, sed lacinia est congue vitae. Mauris ut arcu elit. Quisque suscipit ante sed sagittis molestie. Donec ultricies consequat libero vitae hendrerit. Morbi sed sem nec nulla egestas rhoncus a vitae sem. Maecenas ut ligula vulputate, pulvinar risus a, pellentesque nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras vitae vestibulum arcu. Praesent maximus, nunc non pellentesque facilisis, lacus erat dapibus lacus, eget euismod magna massa nec ex. Praesent finibus tempor sem in porttitor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam aliquet convallis placerat.</p>
+    </div>
+    <div class="item six">6</div>
+    <div class="item seven">7</div>
+</div>
+
+<footer>
+    <h3>This is the footer</h3>
+</footer>
+</body>
+
+</html>
