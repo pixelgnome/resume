@@ -7,25 +7,18 @@
     <title>bootstrap</title>
 
     <style>
-
-
         body {
             background: #ffe;
             color: #222;
             font: 16px "helvetica neue", helvetica, sans-serif;
+            line-height: 1.5em;
         }
-
-
-        header {
-
-        }
-
 
         .grid-container {
             display: grid;
             gap: 2px;
-            grid-template-rows: repeat(25, auto);
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(6, auto);
+            grid-template-columns: 1fr;
             background: #000;
             padding: 2px 0;
 
@@ -37,12 +30,42 @@
         }
 
         .contact-info,  .qualifications, .employment {
-            grid-column: span 3;
+
         }
 
-        .skills {
-            grid-column: span 2;
+        .skills .list {
+            display: flex;
+            margin: 0;
+            padding: 0;
         }
+
+        .skills .list > ul {
+            flex-basis: 300px;
+            margin: 0; padding: 1em;
+        }
+
+
+        .headers, .contact-info ul {
+            display: flex;
+            margin: 0; padding: 0;
+           justify-content: space-between;
+        }
+
+        .contact-info ul {
+            list-style: none;
+
+        }
+
+        h4 {
+            margin: 0; padding: 0;
+        }
+
+        .employer, .years {
+        }
+
+        .years {
+        }
+
 
 
     </style>
@@ -89,9 +112,13 @@
         </ul>
     </div>
 
-    <div class="employment">
-        <h4 class="employer">Thermo Fisher Scientific, Carlsbad, Ca.</h4>
-        <h4 class="years">January 2015 – February 2025</h4>
+    <div class="test-employment">
+
+        <div class="headers">
+            <h4 class="employer">Thermo Fisher Scientific, Carlsbad, Ca.</h4>
+            <h4 class="years">January 2015 – February 2025</h4>
+        </div>
+
         <h4 class="job-title">staff software engineer, ux design, design center - life sciences group</h4>
 
         <p>Senior member of the XDC Experience Design Center team, translating designs into high definition HTML5/CSS3 markup to developers in Carlsbad, San Francisco, India and Singapore for Life Science Group web applications within Thermo Fisher Cloud. </p>
@@ -103,12 +130,16 @@
             <li>Aided in development of web components for the Komodo Design System, used and visible across https://thermofisher.com/.</li>
 
         </ul>
-</div>
+    </div>
+
+
 
     <div class="employment">
 
-        <h4 class="employer">freelance web developer, san diego ca</h4>
-        <h4 class="years">january 2000 – january 2025</h4>
+        <div class="headers">
+            <h4 class="employer">freelance web developer, san diego ca</h4>
+            <h4 class="years">january 2000 – january 2025</h4>
+        </div>
         <p>performed all aspects of website creation: user interface design, ux design, responsive website development,
             wordpress integration, shopify integration, post-launch search engine optimization.
             notable clients: </p>
@@ -123,14 +154,16 @@
         </ul>
     </div>
 
-
-    <h2> previous employment, consulting / contract search experience<br/>
-        greater san diego ca - 1999 to 2015</h2>
+  <div class="item">
+    <h2>Previous Employment, Consulting / Contract Search Experience, Greater San Diego Ca - 1999 to 2015</h2>
+  </div>
 
     <div class="employment">
 
+        <div class="headers">
         <h4 class="employer">pro unlimited (now magnit), san francisco ca</h4>
         <h4 class="years">january 2014 – january 2015</h4>
+        </div>
         <h4 class="job-title">contractor at life technologies/thermo fisher scientific</h4>
         <p>contracted as a front-end web developer with the design center to develop dashboard pages, infrastructure,
             web
@@ -145,7 +178,10 @@
 
     <div class="employment">
 
-        <h4 class="employer">Trademotion </h4>                                           <h4 class="years"> 2014</h4>
+        <div class="headers">
+            <h4 class="employer">Trademotion </h4>
+            <h4 class="years"> 2014</h4>
+        </div>
         <h4 class="job-title">ui designer/front-end web developer (consultant)</h4>
         <p>working on redesigning and front-end development of parts.com and subsidiary websites for independent car
             dealerships. </p>
@@ -153,8 +189,10 @@
 
     <div class="employment">
 
-        <h4 class="employer">San Diego Magazine</h4>                                         <h4 class="years">2011 –
-        2013</h4>
+        <div class="headers">
+            <h4 class="employer">San Diego Magazine</h4>
+            <h4 class="years">2011 – 2013</h4>
+        </div>
         <h4 class="job-title">Director of Digital Media and Design</h4>
 
         <ul>
@@ -171,8 +209,10 @@
 
     <div class="employment">
 
+        <div class="headers">
         <h4 class="employer">MEA Digital</h4>
         <h4 class="years">2007 – 2009</h4>
+        </div>
         <h4 class="job-title">Web Developer/User Interface Designer</h4>
         <ul>
             <li>member of the creative team, specializing in brand-oriented online advertising campaigns, b2b/b2c sites
@@ -190,9 +230,10 @@
     </div>
 
     <div class="employment">
-
+        <div class="headers">
         <h4 class="employer">Aviatech, San Diego ca</h4>
         <h4 class="years">2006</h4>
+        </div>
         <h4 class="job-title">Web Designer/Developer (consultant)</h4>
 
         <p>Worked as a developer/designer on a major web build for the International Franchise Association (Franchise.org) and Liberty Tax Service (libertytax.com) websites.</p>
@@ -200,32 +241,35 @@
     </div>
 
     <div class="employment">
-
+        <div class="headers">
         <h4 class="employer">Art Institute of California, San Diego CA</h4>
         <h4 class="years">2002 – 2006</h4>
+        </div>
         <h4 class="job-title">Instructor of Interactive Media Design</h4>
         <p>Taught courses in new media design and development, developed curriculum current with contemporary industry and technological standards in web design and development, and organized professional projects for students to design and develop. As an educator, my focus was to produce students with equal skill in development as well as design. Introduction to Web Design, Intermediate Web Design, Computer Based Training, Fundamentals of Web Based Programming, Intermediate Authoring, and Digital Portfolio are some of the courses taught. All courses employed theory and application of current web technologies: XHTML/CSS, Javascript, ActionScript 2.0, PHP, mySQL. </p>
     </div>
 
     <div class="employment">
-
+        <div class="headers">
         <h4 class="employer">ActiveEurope </h4>
         <h4 class="years">2001 – 2002</h4>
+        </div>
         <h4 class="job-title">Creative Director, Aix-en-Provence, Provence-Alpes-Côte d'Azur, France (Onsite)</h4>
         <p>Orchestrated creative content, while developing and maintaining the ActiveEurope brand, working with product development and marketing in developing concepts to maximize ActiveEurope's presence in the European market. Provided full graphical support via the World Wide Web and print. This tactical support allowed the company the time it needed to evaluate and shape its staffing processes. </p>
 
     </div>
 
     <div class="employment">
-
+        <div class="headers">
         <h4 class="employer">Active.com</h4>
         <h4 class="years">1999 – 2001</h4>
+        </div>
         <h4 class="job-title">Web Designer, San Diego, Ca.</h4>
         <p>Responsible for web graphics and optimization, user interface design for site and web-based applications, support for content department, banner advertising, Flash-based animation, some print projects, and maintenance of company identity/brand. Lead artist and designer of ActiveParks.org site and National Sports Network affiliate websites, including Triathlete and Competitor Magazines. Also served as company photographer, producing images for the website, press releases, and advertising. </p>
 
     </div>
 
-    <div class="ed">
+    <div class="education">
 
         <h4 class="category">Education</h4>
         <p>university of california, san diego, san diego ca<br/>
@@ -236,7 +280,7 @@
     <div class="skills">
 
         <h4 class="category">Skills</h4>
-
+        <div class="list">
         <ul>
             <li>HTML5</li>
             <li>CSS3</li>
@@ -258,6 +302,7 @@
             <li>Angular</li>
             <li>SEO (Search Engine Optimization)</li>
         </ul>
+        </div>
     </div>
 
 </div>
