@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="https://use.typekit.net/loq0irz.css">
+    <style>
+        body {
+            background: #ffe;
+            color: #222;
+            font-size: 16px;
+            line-height: 1.5em;
+        }
+
+        header, h1, h2, h4 {
+            font-family: "loos-wide", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        h4 {
+            margin: 0; padding: 0;
+            font-size: 1.2rem;
+        }
+
+        .grid-container {
+            display: grid;
+            gap: 2px;
+            grid-template-rows: repeat(6, auto);
+            grid-template-columns: 1fr;
+            background: #666;
+            padding: 2px;
+        }
+
+        /*li, p {*/
+        /*    font-family: area-normal, sans-serif;*/
+        /*    font-weight: 400;*/
+        /*    font-style: normal;*/
+        /*}*/
+        .grid-container > * {
+            background: #eee;
+            padding: 1em;
+        }
+
+        .contact-info,  .qualifications, .employment {
+
+        }
+
+        .skills .list {
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .skills .list > ul {
+            flex-basis: 300px;
+            margin: 0; padding: 1em;
+        }
+
+
+        .headers, .contact-info ul {
+            display: flex;
+            margin: 0; padding: 0;
+           justify-content: space-between;
+        }
+
+        .contact-info ul {
+            list-style: none;
+
+        }
+
+
+
+        .employer, .years {
+        }
+
+        .years {
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+<header>
+    <h1>Salvatore Filippone</h1>
+</header>
+<div class="grid-container">
+    <div class="contact-info">
+
+        <ul>
+            <li><strong>Email:</strong><a href="mailto:sfilippone@gmail.com"> sfilippone@gmail.com</a></li>
+            <li>San Diego, Ca</li>
+            <li><strong>Mobile:</strong> (619) 920-3231</li>
+        </ul>
+    </div>
+
+    <div class="qualifications">
+        <h2>Summary of Qualifications</h2>
+        <p>Seasoned web design and development professional with 28 years of experience delivering user-centered digital solutions across diverse industries.</p>
+
+        <ul>
+            <li>Expertise in HTML5, CSS3, and JavaScript, with a strong emphasis on modern, responsive, and accessible web standards.</li>
+            <li>Skilled in creating and maintaining scalable atomic design systems, leveraging design tokens to ensure consistency across platforms.</li>
+            <li>Proficient in Figma for UI/UX design, prototyping, and cross-functional collaboration with designers, developers, and stakeholders.</li>
+            <li>Deep understanding of SEO best practices, performance optimization, and web accessibility to enhance user engagement and search visibility.</li>
+            <li> Proven ability to bridge the gap between design and development, translating complex requirements into clean, maintainable code.</li>
+            <li>Passionate about clean code, accessibility, and staying current with evolving web technologies such as React.js to deliver exceptional user experiences.</li>
+        </ul>
+    </div>
+
+    <div class="test-employment">
+
+        <div class="headers">
+            <h4 class="employer">Thermo Fisher Scientific, Carlsbad, Ca.</h4>
+            <h4 class="years">January 2015 – February 2025</h4>
+        </div>
+
+        <h4 class="job-title">Staff Software Engineer, UX Design, Design Center - Life Sciences Group</h4>
+
+        <p>Senior member of the XDC Experience Design Center team, translating designs into high definition HTML5/CSS3 markup to developers in Carlsbad, San Francisco, India and Singapore for Life Science Group web applications within Thermo Fisher Cloud. </p>
+        <ul>
+            <li>Strength in consulting executive stakeholders by adding value as an advisor on recruitment strategy for enhancing an innovative workforce. Created the initial atomic design system for the Thermo Scientific branded embedded user interfaces. Improved upon the project and assets to create the newer Aurora Design System, the premier user interface design library for Thermo Fisher Scientific instruments.   </li>
+            <li>Introduced the use of Design Tokens in the system, then evolved it into Figma Variables, allowing our design team to introduce a light theme to complement the default dark theme. </li>
+            <li>The design system is shared as a library on the Figma platform, shared with 22 internal and external design teams for use in building embedded user interfaces.  </li>
+            <li>Built the front-end user interface for cloud version of iBright Analysis Software and visited Bangalore, India development team to aid in integration before launch. </li>
+            <li>Aided in development of web components for the Komodo Design System, used and visible across https://thermofisher.com/.</li>
+
+        </ul>
+    </div>
+
+
+    <div class="employment">
+
+        <div class="headers">
+            <h4 class="employer">freelance web developer, san diego ca</h4>
+            <h4 class="years">january 2000 – january 2025</h4>
+        </div>
+        <p>Performed all aspects of website creation: User interface design, UX design, responsive website development, wordpress integration, shopify integration, post-launch search engine optimization. Notable clients: </p>
+
+        <ul>
+            <li><a href="https://stereounlimitedsd.com/">Stereo Unlimited</a>  2024 – present</li>
+            <li><a href="https://www.ronellispickups.com/">Ron Ellis Pickups</a> 2020-2022</li>
+            <li>Adams Avenue Bicycles - 2014</li>
+            <li>Caffe Italia - 2011</li>
+            <li>Joyce Cutler Shaw - 2009</li>
+            <li>Phel Steinmetz - 2007</li>
+        </ul>
+    </div>
+
+  <div class="item">
+    <h2>Previous Employment, Consulting / Contract Search Experience, Greater San Diego Ca - 1999 to 2015</h2>
+  </div>
+
+    <div class="employment">
+
+        <div class="headers">
+        <h4 class="employer">PRO Unlimited (Now Magnit), San Francisco CA</h4>
+        <h4 class="years">June 2014 – January 2015</h4>
+        </div>
+        <h4 class="job-title">Contractor at Life Technologies/Thermo Fisher Scientific</h4>
+        <p>Contracted as a front-end web developer with the Design Center to develop dashboard pages, infrastructure, web components, structural HTML5 and CSS for the launch of Thermo Fisher Connect Platform (formerly Life Technologies Connect).</p>
+        <p>Worked closely with designers to convert Photoshop and Illustrator web designs into HTML5/CSS3/Javascript.</p>
+        <p>Hand-coded and tested interfaces in multiple browsers before submitting to the cloud team.</p>
+        <p>Attended standups and participated in sprints and liaised with the design and cloud team to ensure proper implementation.</p>
+    </div>
+
+    <div class="employment">
+
+        <div class="headers">
+            <h4 class="employer">Trademotion </h4>
+            <h4 class="years"> 2014</h4>
+        </div>
+        <h4 class="job-title">UI Designer/Front-End Web Developer (Consultant)</h4>
+        <p> Working on redesigning and front-end development of Parts.com and subsidiary websites for independent car dealerships.
+            San Diego</p>
+    </div>
+
+    <div class="employment">
+
+        <div class="headers">
+            <h4 class="employer">San Diego Magazine</h4>
+            <h4 class="years">2011 – 2013</h4>
+        </div>
+        <h4 class="job-title">Director of Digital Media and Design</h4>
+
+
+
+
+        <ul>
+            <li>Provide creative and developmental support for all web and digital</li>
+            <li>Aided in crafting an update to the magazine’s brand and day-to-day maintenance of the website.</li>
+            <li>Designed, architected, developed, and launched the latest sandiegomagazine.com and the launch of new exquisiteweddingsmagazine.com</li>
+            <li>Guided the launch of the magazine to the iPad platform.</li>
+        </ul>
+    </div>
+
+    <div class="employment">
+
+        <div class="headers">
+        <h4 class="employer">MEA Digital</h4>
+        <h4 class="years">2007 – 2009</h4>
+        </div>
+        <h4 class="job-title">Web Developer/User Interface Designer</h4>
+        <p>Member of the creative team, specializing in brand-oriented online advertising campaigns, B2B/B2C sites and micro sites for brands such as Nickelodeon, Odyssey Golf, Top-Flite Golf, Oakley, Vistage International and Cars.com.</p>
+
+        <ul>
+            <li>User interface design, web development using XHTML/CSS/JavaScript/PHP, Flash/ActionScript.</li>
+            <li>Implementation of open-source content management solutions.</li>
+            <li>Creation of information architecture solutions (mapping and wireframing, PPC funnels, search and registration processes). Designed and developed rich media banners and email campaigns, including audio/video work for site assets.</li>
+            <li>Provided creative and developmental support for all web and digital.</li>
+        </ul>
+    </div>
+
+    <div class="employment">
+        <div class="headers">
+        <h4 class="employer">Aviatech, San Diego, Ca.</h4>
+        <h4 class="years">2006</h4>
+        </div>
+        <h4 class="job-title">Web Designer/Developer (consultant)</h4>
+
+        <p>Worked as a developer/designer on a major web build for the International Franchise Association (Franchise.org) and Liberty Tax Service (libertytax.com) websites.</p>
+
+    </div>
+
+    <div class="employment">
+        <div class="headers">
+        <h4 class="employer">Art Institute of California, San Diego, Ca.</h4>
+        <h4 class="years">2002 – 2006</h4>
+        </div>
+        <h4 class="job-title">Instructor of Interactive Media Design</h4>
+        <p>Taught courses in new media design and development, developed curriculum current with contemporary industry and technological standards in web design and development, and organized professional projects for students to design and develop. As an educator, my focus was to produce students with equal skill in development as well as design. Introduction to Web Design, Intermediate Web Design, Computer Based Training, Fundamentals of Web Based Programming, Intermediate Authoring, and Digital Portfolio are some of the courses taught. All courses employed theory and application of current web technologies: XHTML/CSS, Javascript, ActionScript 2.0, PHP, mySQL. </p>
+    </div>
+
+    <div class="employment">
+        <div class="headers">
+        <h4 class="employer">ActiveEurope</h4>
+        <h4 class="years">2001 – 2002</h4>
+        </div>
+        <h4 class="job-title">Creative Director, Aix-en-Provence, Provence-Alpes-Côte d'Azur, France (Onsite)</h4>
+        <p>Orchestrated creative content, while developing and maintaining the ActiveEurope brand, working with product development and marketing in developing concepts to maximize ActiveEurope's presence in the European market. Provided full graphical support via the World Wide Web and print. This tactical support allowed the company the time it needed to evaluate and shape its staffing processes. </p>
+
+    </div>
+
+    <div class="employment">
+        <div class="headers">
+        <h4 class="employer">Active.com</h4>
+        <h4 class="years">1999 – 2001</h4>
+        </div>
+        <h4 class="job-title">Web Designer, San Diego, Ca.</h4>
+        <p>Responsible for web graphics and optimization, user interface design for site and web-based applications, support for content department, banner advertising, Flash-based animation, some print projects, and maintenance of company identity/brand. Lead artist and designer of ActiveParks.org site and National Sports Network affiliate websites, including Triathlete and Competitor Magazines. Also served as company photographer, producing images for the website, press releases, and advertising. </p>
+
+    </div>
+
+    <div class="education">
+
+        <h4 class="category">Education</h4>
+        <p>University of California, San Diego - San Diego, Ca.<br/>
+            Bachelor of Arts (B.A.), Visual Arts</p>
+
+    </div>
+
+    <div class="skills">
+
+        <h4 class="category">Skills</h4>
+        <div class="list">
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>SASS</li>
+            <li>Javascript</li>
+            <li>Bootstrap</li>
+            <li>GIT</li>
+            <li>Figma</li>
+            <li>Sketch</li>
+
+
+        </ul>
+        <ul>
+            <li>Axure RP</li>
+            <li>Adobe photoshop and Illustrator</li>
+            <li>Design Tokens</li>
+            <li>Figma Variables</li>
+            <li>React.js</li>
+            <li>Angular</li>
+            <li>SEO (Search Engine Optimization)</li>
+        </ul>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+
+</html>
