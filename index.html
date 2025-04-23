@@ -1,103 +1,165 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>bootstrap</title>
 
     <style>
+      :root {
+        --background-body: #000;
+        --background-wrapper: #18181b;
+        --border-color: #2a2a2b;
+        --heading-color: #f4f4f5;
+        --text-color: #9f9fa8;
+        --teal-link-color: #00bba7;
+        --font-sans: ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        --font-mono: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+        --color-teal-50: oklch(98.4% .014 180.72);
+        --color-teal-300: oklch(85.5% .138 181.071);
+        --color-teal-400: oklch(77.7% .152 181.912);
+        --color-teal-500: oklch(70.4% .14 182.503);
+        --color-teal-600: oklch(60% .118 184.704);
+        --color-sky-200: oklch(90.1% .058 230.902);
+        --color-pink-400: oklch(71.8% .202 349.761);
+        --color-zinc-50: oklch(98.5% 0 0);
+        --color-zinc-100: oklch(96.7% .001 286.375);
+        --color-zinc-200: oklch(92% .004 286.32);
+        --color-zinc-300: oklch(87.1% .006 286.286);
+        --color-zinc-400: oklch(70.5% .015 286.067);
+        --color-zinc-500: oklch(55.2% .016 285.938);
+        --color-zinc-600: oklch(44.2% .017 285.786);
+        --color-zinc-700: oklch(37% .013 285.805);
+        --color-zinc-800: oklch(27.4% .006 286.033);
+        --color-zinc-900: oklch(21% .006 285.885);
+        --color-black: #000;
+        --color-white: #fff;
+        --spacing: .25rem;
+        --container-xs: 20rem;
+        --container-xl: 36rem;
+        --container-2xl: 42rem;
+        --container-3xl: 48rem;
+        --container-5xl: 64rem;
+        --container-7xl: 80rem;
+        --text-xs: .8125rem;
+        --text-xs--line-height: 1.5rem;
+        --text-sm: .875rem;
+        --text-sm--line-height: 1.5rem;
+        --text-base: 1rem;
+        --text-base--line-height: 1.75rem;
+        --text-4xl: 2rem;
+        --text-4xl--line-height: 2.5rem;
+        --text-5xl: 3rem;
+        --text-5xl--line-height: 3.5rem;
+        --font-weight-medium: 500;
+        --font-weight-semibold: 600;
+        --font-weight-bold: 700;
+        --tracking-tight: -.025em;
+        --radius-md: .375rem;
+        --radius-xl: .75rem;
+        --radius-2xl: 1rem;
+        --radius-3xl: 1.5rem;
+        --ease-in: cubic-bezier(.4,0,1,1);
+        --ease-out: cubic-bezier(0,0,.2,1);
+        --blur-xs: 4px;
+        --blur-sm: 8px;
+        --default-transition-duration: .15s;
+        --default-transition-timing-function: cubic-bezier(.4,0,.2,1);
+        --default-font-family: var(--font-sans);
+        --default-mono-font-family: var(--font-mono)
+    }
 
-        :root {
-            --background-body: #000;
-            --background-wrapper: #18181b;
-            --border-color: #2a2a2b;
-            --heading-color: #f4f4f5;
-            --text-color: #9f9fa8;
-            --teal-link-color: #00bba7;
-            --body-font: Helvetica, sans-serif;
-        }
+      body {
+        display: flex;
+        justify-content: center;
+        background: var(--background-body);
+        color: var(--text-color);
+        font-size: var(--text-base);
+        font-family: var(--default-font-family);
+        line-height: var(--text-base--line-height);
+      }
 
+      h1 {
+        font-size: var(--text-5xl);
+      }
 
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-weight: 700;
+        font-family: var(--font-sans);
+        color: var(--heading-color);
+      }
 
-        body {
-            background: var(--background-body);
-            color: var(--text-color);
-            font-size: 18px;
-            font-family: var(--body-font);
-            line-height: 1.5em;
-        }
+      h4 {
+        margin: 0;
+        padding: 0;
+        font-size: 1.2rem;
+      }
 
-      h1, h2, h3, h4 {
-            font-family: "loos-wide", sans-serif;
-            font-weight: 200;
-            font-style: normal;
-            color: var(--heading-color);
-        }
+      a {
+        color: var(--teal-link-color);
+      }
 
-        h4 {
-            margin: 0; padding: 0;
-            font-size: 1.2rem;
-        }
+      .wrapper {
+        flex-basis: 1000px;
+        align-items: center;
+        background: var(--background-wrapper);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-2xl);
+        display: flex;
+        flex-direction: column;
+      }
 
-        a {
-            color: var(--teal-link-color);
+      .top-container,
+      .middle-container,
+      .bottom-container {
+        text-align: center;
+        padding: 1em;
+        line-height: 1.5rem;
+      }
 
-        }
-
-        .wrapper {
-            background: var(--background-wrapper);
-            border: 1px solid var(--border-color);
-            display: flex;
-            flex-direction: column;
-        }
-
-       .top-container, .middle-container, .bottom-container {
-       }
-
-
-.circle-clip {
-    clip-path: circle(50%);
-    width: 200px;
-    height: 200px;
-
-}
-
-
+      .circle-clip {
+        clip-path: circle(50%);
+        width: 200px;
+        height: 200px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
-<div class="wrapper">
-    <div class="top-container">
-
+  <body>
+    <div class="wrapper">
+      <div class="top-container">
         <h1>I'm Salvatore Filippone</h1>
         <h2>a programmer.</h2>
-    </div>
-    <div class="middle-container">
-        <img class="circle-clip" src="me.png">
+      </div>
+      <div class="middle-container">
+        <img class="circle-clip" src="me.png" />
         <h2>Hello</h2>
-        <p>I am Web Developer and Designer</p>
-        <p>I love coffee, guitars and code.</p>
+        <p>I am Web Developer and Designer. I love coffee, guitars and code.</p>
         <h2>Skills</h2>
-        <p>I started learning to code when I was 18 years old because I wanted to build a website for a non-profit I was volunteering at.
-            Over time, I have gained a wealth of experience designing and developing mobile and web applications.</p>
+        <p>
+          I started learning to code when I was 18 years old because I wanted to
+          build a website for a non-profit I was volunteering at. Over time, I
+          have gained a wealth of experience designing and developing mobile and
+          web applications.
+        </p>
 
         <h2>Get In Touch</h2>
-        <p>If you love films, trivia, music and more. Let's talk about how awesome they are! We can code while we trade film quotes!</p>
-
-
+        <p>
+          If you love films, trivia, music and more. Let's talk about how
+          awesome they are! We can code while we trade film quotes!
+        </p>
+      </div>
+      <div class="bottom-container">
+        <ul>
+            <li><a href="https://linkedin.com/in/salvatorefilippone">LinkedIn</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+        
+       
+      </div>
     </div>
-    <div class="bottom-container">
-        <a href="https://linkedin.com/in/salvatorefilippone">LinkedIn</a>
-        <a href="resume.html">Resume</a>
-    </div>
-</div>
-
-
-
-
-</body>
-
+  </body>
 </html>
